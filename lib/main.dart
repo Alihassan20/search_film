@@ -14,6 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        scrollbarTheme: const ScrollbarThemeData().copyWith(
+          thumbColor: MaterialStateProperty.all(Colors.white),
+        ),
         primarySwatch: Colors.blue,
       ),
       home: const HomeSearch(),
